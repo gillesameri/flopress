@@ -49,14 +49,11 @@ No prior programming is required. If you have worked with WordPress before, you 
 
 A basic understanding of mathematics (order of operations, addition, subtraction, multiplication) will facilitate comprehension of certain coding logic.
 
-
 ## And more... 
 
 * **Get access to 70+ time-saving features** Get access to a great deal of ready-to-use features, directly available on your WordPress administration page.
 * **Add 12 Plugins definitions** FloPress provides hook and function definitions on some of the most popular and widely used WordPress plugins.
 * **Access your features anywhere** Sync your features to your own host, via FTP. Connect your own storage location, push the features in one click and share your features across all your websites.
-
-Get FloPress Premium here : [https://flopress.io/](https://flopress.io)
 
 ## Installation
 
