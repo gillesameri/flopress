@@ -17,8 +17,6 @@
  * Domain Path:       /languages
  * License: GPL3
  * 
- * @fs_premium_only /includes/codex_ext, /includes/features/, /includes/class-flopress-ftp-library.php, /includes/class-flopress-library.php, /includes/codexs_ext.php
- * @fs_ignore /vendor /sdk
  */
 
 // If this file is called directly, abort.
@@ -65,7 +63,6 @@ function uninstall_flopress() {
 register_activation_hook( __FILE__, 'activate_flopress' );
 register_deactivation_hook( __FILE__, 'deactivate_flopress' );
 register_uninstall_hook( __FILE__, 'uninstall_flopress' );
-//add_action('after_uninstall', 'uninstall_flopress');
 
 /**
  * Begins execution of the plugin.
