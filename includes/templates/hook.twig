@@ -1,0 +1,5 @@
+// {{hook.type}} : {{hook.title}}
+public function {{ hook.fct_name }}({{hook.args|join(',')|raw}}){
+{% include 'instructions-block.twig' with {'children': hook.blocks} %}
+}
+

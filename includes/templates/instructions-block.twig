@@ -1,0 +1,5 @@
+{% for key, child in children %}
+{% if child.template %}
+{% include child.template with {'item': child} %}
+{% endif %}
+{% endfor %}

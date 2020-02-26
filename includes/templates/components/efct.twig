@@ -1,0 +1,3 @@
+{% autoescape %}
+{{item.var}} = {{item.name}}({{item.args|join(',')|raw}});
+{% endautoescape %}

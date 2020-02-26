@@ -1,0 +1,11 @@
+{% if item.name == 'array' %}
+{{item.var|raw}} = array(
+{% for k, v in item.inputs|cast_to_array %}
+{% if (v.label and v.label is not empty) %} '{{v.label|raw}}'=> {% endif %} {% if (item.args[k] is not empty) %} {{item.args[k]|raw}}, {% else %} false, {% endif %}
+{% endfor %}
+);
+{% elseif(item.name == 'integer') %}
+{{item.var|raw}} = {{item.value|raw}};
+{% else %}
+{{item.var|raw}} = '{{item.value|raw}}';
+{% endif %}

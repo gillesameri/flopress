@@ -1,0 +1,3 @@
+{% for key, block in item.outputs %}
+    {% include 'instructions-block.twig' with {'children': block} %}
+{% endfor %}

@@ -1,0 +1,52 @@
+<?php
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+{% autoescape %}
+class {{class_name}}{
+{% for key, block in statics %}
+{% if (((block.type != 'action') and (block.type != 'filter') and (block.type != 'shortcode'))) %}
+{% if block.type == 'data' %}
+
+{% if block.content.type[0] == 'array' %}
+private ${{block.var_name}} = array(
+{% if block.content.value|length > 0 %}
+{% for key, value in block.content.value|cast_to_array %}
+    '{{key}}' => '{{value}}',
+{% endfor %}
+{% endif %}
+);
+{% elseif block.content.type[0] == 'boolean' %}
+    private ${{block.var_name}} = {% if block.content.value %} true {% else %} false {% endif %};
+{% elseif block.content.type[0] == 'number' %}
+    private ${{block.var_name}} = {{block.content.value}};
+{% else %}
+private ${{block.var_name}} = "{{ block.content.value|raw }}";
+{% endif %}
+
+{% else %}
+private ${{block.var_name}} = "{{ block.content|raw }}";
+{% endif %}
+{% endif %}
+{% endfor %}
+public function __construct($params=array()){
+{% for key, block in statics %}
+{% if block.type == 'data' %}
+if(array_key_exists('{{key}}',$params)) $this->{{block.var_name}} = $params['{{key}}'];
+{% endif %}
+{% endfor %}
+{% for key, block in blocks %}
+{% if ((block.type == 'action') or (block.type == 'filter') or (block.type == 'shortcode')) %}
+{% if (block.content.autoload) %}
+add_{{block.type}}("{{block.name}}",array($this,"{{block.fct_name}}"),{{block.content.priority}},{{block.args_length}});
+{% endif %}
+{% endif %}
+{% endfor %}
+}
+{% for key, block in blocks %}
+{% if ((block.type == 'action') or (block.type == 'filter') or (block.type == 'shortcode')) %}
+{% include 'hook.twig' with {'hook': block} %}
+{% endif %}
+{% endfor %}
+}
+{% endautoescape %}

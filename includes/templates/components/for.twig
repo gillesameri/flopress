@@ -1,0 +1,5 @@
+
+for({{item.index}} = 0;{{item.index}} < {{item.args['end_index']|raw}}; {{item.index}}++ ){
+{% include 'instructions-block.twig' with {'children': item.ofct_loop} %}
+}
+

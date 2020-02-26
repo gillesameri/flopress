@@ -1,0 +1,5 @@
+
+while({{item.args|join(',')|raw}}){
+{% include 'instructions-block.twig' with {'children': item.ofct_loop} %}
+}
+

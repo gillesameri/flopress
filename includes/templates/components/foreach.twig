@@ -1,0 +1,3 @@
+foreach({{item.args|join(',')|raw}} as {{item.key|raw}} => {{item.item|raw}} ){
+{% include 'instructions-block.twig' with {'children': item.ofct_loop} %}
+}

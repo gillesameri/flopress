@@ -1,0 +1,6 @@
+if({{item.args|join(',')|raw}}){
+{% include 'instructions-block.twig' with {'children': item.ofct_true} %}
+}
+else{
+{% include 'instructions-block.twig' with {'children': item.ofct_false} %}
+}
