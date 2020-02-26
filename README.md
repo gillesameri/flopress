@@ -1,17 +1,12 @@
-=== FloPress ===
-Contributors: gillesameri
-Plugin URI: http://flopress.io
-License: GPLv3
+# FloPress
+http://flopress.io
+Contributors: Gilles Ameri
 License URI: http://www.gnu.org/licenses/gpl.html
-Tags: Visual scripting, snippets, features, customization, development
-Requires at least: 4.7
-Tested up to: 5.2.1
-Stable tag: 1.4.2
-Requires PHP: 5.4.43
 
 Flopress is a complete visual scripting system based on the use of graphical elements representing native WordPress mechanisms.
 
-== Description ==
+## Description 
+
 <strong>CUSTOMIZE WORDPRESS WITH VISUAL SCRIPTING</strong><br />
 
 FloPress is a suite of integrated tools for WordPress developers & integrators to design and build features without writing a line of code. You can do many things with FloPress like making WordPress more secure, updating post data, creating Shortcodes or whatever you want.
@@ -25,7 +20,7 @@ Visual scripting system is based on the concept of using graphical elements, whi
 
 This system is extremely flexible and powerful as it provides the ability to use virtually the full range of concepts and tools, usually only available for developers. Code is more visual and it needs less abstract thinking to be understood. Any integrator, developer can look at it and quickly grasp the flow of logic.
 
-[youtube https://www.youtube.com/watch?v=Ilw1SP5gjAw]
+[![Alt text](https://img.youtube.com/vi/Ilw1SP5gjAw/0.jpg)](https://www.youtube.com/watch?v=Ilw1SP5gjAw)
 
 ## Features are composed with the following element
 
@@ -55,19 +50,17 @@ No prior programming is required. If you have worked with WordPress before, you 
 A basic understanding of mathematics (order of operations, addition, subtraction, multiplication) will facilitate comprehension of certain coding logic.
 
 
-### FloPress Premium 
-
-<strong>[Upgrade to FloPress Premium](https://flopress.io/premium-features/)</strong> to:
+## And more... 
 
 * **Get access to 70+ time-saving features** Get access to a great deal of ready-to-use features, directly available on your WordPress administration page.
 * **Add 12 Plugins definitions** FloPress provides hook and function definitions on some of the most popular and widely used WordPress plugins.
 * **Access your features anywhere** Sync your features to your own host, via FTP. Connect your own storage location, push the features in one click and share your features across all your websites.
 
-Get FloPress Premium here : [https://flopress.io/premium-features/](https://flopress.io/premium-features/)
+Get FloPress Premium here : [https://flopress.io/](https://flopress.io)
 
-== Installation ==
+## Installation
 
-=== Method 1 : Auto ===
+### Method 1 : Auto
 
 1. Log in to your WP install
 2. From the Administration Panels, click on the Plugin Menu
@@ -77,7 +70,7 @@ Get FloPress Premium here : [https://flopress.io/premium-features/](https://flop
 6. Activate the plugin.
 7. Enter the license key you received after the purchase and activate it.
 
-=== Method 2 : FTP ===
+### Method 2 : FTP
 
 1. Download the FloPress plugin
 2. Upload ‘flopress’ to the ‘/wp-content/plugins/’ directory
@@ -85,20 +78,12 @@ Get FloPress Premium here : [https://flopress.io/premium-features/](https://flop
 4. Activate the plugin.
 5. Enter the license key you received after the purchase and activate it.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
-= Support and Documentation =
+# Support and Documentation
 Please refer to our [Support & Documentation pages](https://flopress.io/documentation/) for all the technical information and support documentation on the FloPress plugin.
 
-== Screenshots ==
-
-1. FloPress features/snippets management.
-2. Function definitions picker
-3. Hooks (actions and filters) picker
-4. Dynamic data
-5. Render HTML with dynamic templates (Twig)
-
-== Change Log ==
+# Change Log
 
 = 1.4.3 =
 * Fix: Update HTML in the time-saving feature : Show an urgent message in the admin area
