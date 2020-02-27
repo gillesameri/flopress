@@ -1,7 +1,5 @@
 # FloPress
 http://flopress.io
-Contributors: Gilles Ameri
-License URI: http://www.gnu.org/licenses/gpl.html
 
 Flopress is a complete visual scripting system based on the use of graphical elements representing native WordPress mechanisms.
 
@@ -79,6 +77,10 @@ A basic understanding of mathematics (order of operations, addition, subtraction
 
 # Support and Documentation
 Please refer to our [Support & Documentation pages](https://flopress.io/documentation/) for all the technical information and support documentation on the FloPress plugin.
+
+Contributors: Gilles Ameri
+
+License URI: http://www.gnu.org/licenses/gpl.html
 
 # Change Log
 
